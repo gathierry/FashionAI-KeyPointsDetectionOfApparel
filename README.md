@@ -24,7 +24,7 @@ It actually runs ```stage2/trainval.py``` five times for five clothing types.
 
 Data preprocessing is performed in ```stage2/data_generator.py``` which is called during the training
 
-Two networks are used during this challenge, which are ```stage2/cascaded_pyramid_network.py``` and ```stage2v9/cascaded_pyramid_network_v9.py```. They are both re-implementation of [Cascaded Pyramid Network for Multi-Person Pose Estimation](https://arxiv.org/abs/1711.07319). The final score result from ensemble learning. The two networks share the same architecture with different backbones.
+Two networks are used during this challenge, which are ```stage2/cascaded_pyramid_network.py``` and ```stage2v9/cascaded_pyramid_network_v9.py```. They are both re-implementations of [Cascaded Pyramid Network for Multi-Person Pose Estimation](https://arxiv.org/abs/1711.07319). The final score result from ensemble learning. The two networks share the same architecture with different backbones.
 
 ### Test
 
@@ -36,7 +36,7 @@ run ```python3 predict.py``` five times with corresponding configuration (clothi
 
 run ```python3 concatenate_results.py``` to merge all results in a .csv file for submission.
 
-## Experiments
+## Experiments (reduction of normalized error)
 - Replace ResNet50 by ResNet152 as backbone network (-0.5%)
 - Increase input resolution from 256x256 to 512x512 (-2.5%)
 - Gaussian blur on predicted heatmap (-0.5%)
