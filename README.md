@@ -24,7 +24,7 @@ It actually runs ```stage2/trainval.py``` five times for five clothing types.
 
 Data preprocessing is performed in ```stage2/data_generator.py``` which is called during the training
 
-Two networks are used during this challenge, which are ```stage2/cascaded_pyramid_network.py``` and ```stage2v9/cascaded_pyramid_network_v9.py``` . The final score result from ensemble learning. The two networks share the same architecture with different backbones.
+Two networks are used during this challenge, which are ```stage2/cascaded_pyramid_network.py``` and ```stage2v9/cascaded_pyramid_network_v9.py```. They are both re-implementation of [Cascaded Pyramid Network for Multi-Person Pose Estimation](https://arxiv.org/abs/1711.07319) The final score result from ensemble learning. The two networks share the same architecture with different backbones.
 
 ### Test
 
