@@ -14,10 +14,7 @@ import pytorch_utils
 from config import Config
 from kpda_parser import KPDA
 from stage2.cascade_pyramid_network import CascadePyramidNet
-from stage2.cascade_pyramid_network_v8 import CascadePyramidNetV8
-from stage2.cascade_pyramid_network_v11 import CascadePyramidNetV11
 from stage2v9.cascade_pyramid_network_v9 import CascadePyramidNetV9
-from stage2v15.cascade_pyramid_network_v15 import CascadePyramidNetV15
 from utils import draw_heatmap, draw_keypoints
 from stage2.keypoint_encoder import KeypointEncoder
 from utils import normalized_error

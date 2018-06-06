@@ -16,10 +16,7 @@ from kpda_parser import KPDA
 from config import Config
 from stage2.data_generator import DataGenerator
 from stage2.cascade_pyramid_network import CascadePyramidNet
-from stage2.cascade_pyramid_network_v8 import CascadePyramidNetV8
-from stage2v4.cascade_pyramid_network_v4 import CascadePyramidNetV4
 from stage2v9.cascade_pyramid_network_v9 import CascadePyramidNetV9
-from stage2v15.cascade_pyramid_network_v15 import CascadePyramidNetV15
 from stage2.viserrloss import VisErrorLoss
 from lr_scheduler import LRScheduler
 
@@ -94,7 +91,7 @@ if __name__ == '__main__':
 
     batch_size = 24
     workers = 10
-    n_gpu = pytorch_utils.setgpu('4,5,6,7')
+    n_gpu = pytorch_utils.setgpu('0,1,2,3')
     epochs = 1000
     # 256 pixels: SGD L1 loss starts from 1e-2, L2 loss starts from 1e-3
     # 512 pixels: SGD L1 loss starts from 1e-3, L2 loss starts from 1e-4
@@ -105,7 +102,7 @@ if __name__ == '__main__':
     resume = False
 
     config = Config(args.clothes)
-    net = CascadePyramidNetV8(config)
+    net = CascadePyramidNet(config)
     loss = VisErrorLoss()
     train_data = KPDA(config, db_path, 'train')
     val_data = KPDA(config, db_path, 'val')
