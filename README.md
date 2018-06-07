@@ -1,6 +1,6 @@
 # A Pytorch Implementation of Cascaded Pyramid Network for FashionAI Key Points Detection
 
-This code implement the [Cascaded Pyramid Network for Multi-Person Pose Estimation](https://arxiv.org/abs/1711.07319) in Pytorch to detect key points of clothing. It was started before offical code released so there are some differences. A variety of modifications on CPN are tested. ResNet-152 backbone and SENet-154 backbone show better results.
+This code implement the [Cascaded Pyramid Network for Multi-Person Pose Estimation](https://arxiv.org/abs/1711.07319) in Pytorch to detect key points of clothing including five types: blouse, dress, outwear, skirt and trousers. It was started before offical code released so there are some differences. A variety of modifications on CPN are tested. ResNet-152 backbone and SENet-154 backbone show better results.
 
 <div align="center">
 <img src="demo/blouse.png" width="256"/> <img src="demo/dress.png" width="256"/> <img src="demo/outwear.png" width="256"/> <img src="demo/skirt.png" width="256"/> <img src="demo/trousers.png" width="256"/>
@@ -122,4 +122,4 @@ run `python3 src/kpdetector/concatenate_results.py` to merge all results in a `.
 
 ## Benchmark
 
-This solution achieved LB 3.82% in Tianchi FashionAI Global Challenge 17th place out 2322 teams. Check the leaderboard [here](https://tianchi.aliyun.com/competition/rankingList.htm?spm=5176.11165320.0.0.29762af1InLUXu&raceId=231648&season=1&_lang=en_US). 
+This solution achieved LB 3.82% in Tianchi FashionAI Global Challenge, 17th place out 2322 teams. Check the leaderboard [here](https://tianchi.aliyun.com/competition/rankingList.htm?spm=5176.11165320.0.0.29762af1InLUXu&raceId=231648&season=1&_lang=en_US). 
