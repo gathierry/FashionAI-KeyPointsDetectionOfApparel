@@ -22,7 +22,7 @@ This code implement the [Cascaded Pyramid Network for Multi-Person Pose Estimati
 
 ### Data Preparation
 
-Download [FashionAI dataset](https://tianchi.aliyun.com/competition/information.htm?spm=5176.11165261.5678.2.34b72ec5iFguTn&raceId=231648&_lang=en_US) and put files in such structure:
+Download [FashionAI dataset](http://fashionai.alibaba.com/datasets/) and put files in such structure:
 
 	DATA_DIR/
 		   |-- wu_train/
